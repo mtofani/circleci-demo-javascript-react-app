@@ -13,7 +13,7 @@ workflows:
       - node/test:
           version: 10.19.0
       - store_test_results:
-        path: test
+          path: test
 
 jobs:
   build:
