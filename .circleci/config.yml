@@ -21,5 +21,4 @@ jobs:
 workflows:
   app-tests:
     jobs:
-      - node/test:
-          version: 13.11.0
+      - build1
