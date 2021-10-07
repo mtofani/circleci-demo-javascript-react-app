@@ -19,9 +19,6 @@ jobs:
 
 workflows:
   matrix-tests:
-    steps:
-      - store_test_results:
-          path: reports/junit
     jobs:
       - node/test:
           version: 13.11.0
