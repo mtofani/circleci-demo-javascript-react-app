@@ -28,4 +28,4 @@ workflows:
           version: 10.19.0
     steps:
       - store_test_results:
-        path: reports/junit
+          path: reports/junit
