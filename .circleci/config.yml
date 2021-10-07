@@ -15,7 +15,6 @@ jobs:
       - run: docker run --mount source=datastore,destination=/mnt/volume debian:bullseye-slim dd if=/dev/zero of=/mnt/volume/zero bs=32M count=32
       - run: docker volume ls
       - run: mkdir test-results
-      - run: npm test
       - store_test_results:
           path: test-results
 
@@ -23,3 +22,11 @@ workflows:
   app-tests:
     jobs:
       - build1
+  matrix-tests:
+    jobs:
+      - node/test:
+          version: 13.11.0
+      - node/test:
+          version: 12.16.0
+      - node/test:
+          version: 10.19.0
