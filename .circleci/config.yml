@@ -5,9 +5,9 @@ version: 2.1
 
 jobs:
   build1:
+    working_directory: /tmp
     docker:
       - image: docker
-    working_directory: /tmp
     steps:
       - setup_remote_docker:
           docker_layer_caching: false
