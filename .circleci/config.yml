@@ -14,4 +14,4 @@ workflows:
           version: 10.19.0
       steps:
         - store_test_results:
-            path: test-results
+          path: test-results
