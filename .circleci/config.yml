@@ -16,7 +16,7 @@ jobs:
       - run: docker volume ls
 
 workflows:
- matrix-tests:
+  matrix-tests:
     jobs:
       - node/test:
           version: 13.11.0
