@@ -12,5 +12,7 @@ workflows:
           version: 12.16.0
       - node/test:
           version: 10.19.0
-      - store_test_results:
-          path: test-results
+      
+      step:
+        - store_test_results:
+            path: test-results
